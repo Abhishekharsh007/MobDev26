@@ -1,4 +1,4 @@
-import { View, Text, Image, TextInput } from "react-native";
+import { View, Text, Image, TextInput, Pressable } from "react-native";
 import { useState } from "react";
 
 export default function HomeScreen() { 
@@ -45,6 +45,30 @@ export default function HomeScreen() {
           borderColor: "#3307e2d8",
         }}
       />
+
+      {/* <Pressable onPress={(e) => alert('Warning! Link Pressed')}>
+        <Text>
+          Click Me
+        </Text>
+      </Pressable> */}
+
+      /* Explore onLongPress, onPressIn and onPressOut */
+      <Pressable
+        onPress={() => alert('Text Pressed!')}
+        style={({ pressed }) => ({
+          backgroundColor: pressed ? "#4a42d4" : "#6C63FF"
+        })}
+        hitSlop={{
+          top: 25,
+          bottom: 25,
+          left: 25,
+          right: 25
+        }}
+      >
+        {({ pressed }) => 
+          pressed ? <Text>Pressing...</Text> : <Text>Press me</Text>
+        }
+      </Pressable>
     </View>
   );
 }
