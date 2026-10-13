@@ -37,6 +37,14 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 8,
   },
-  title: {},
-  subtitle: {}
+  title: {
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "#333"
+  },
+  subtitle: {
+    fontSize: 14,
+    color: "#888",
+    marginTop: 4
+  }
 })
