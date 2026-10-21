@@ -5,18 +5,10 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./src/screens/HomeScreen";
 import DetailScreen from "./src/screens/DetailScreen";
 import ProfileScreen from "./src/screens/ProfileScreen";
+import StaticStackNavigator from "./src/navigator/stack/StaticStackNavigator";
+import DynamicStackNavigator from "./src/navigator/stack/DynamicStackNavigator";
 
-const Stack = createNativeStackNavigator({
-  initialRouteName: "Home",
-  screens: {
-    Home: HomeScreen,
-    Details: DetailScreen,
-    Profile: ProfileScreen,
-  }
-});
-
-const Navigation = createStaticNavigation(Stack);
 
 export default function App() { 
-  return <Navigation />
+  return <DynamicStackNavigator />
 }
