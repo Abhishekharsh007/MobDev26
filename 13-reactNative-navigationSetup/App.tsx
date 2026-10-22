@@ -12,5 +12,7 @@ import DynamicTabNavigator2 from "./src/navigator/tabs/DynamicTabNavigator2";
 import DynamicTabNavigator3 from "./src/navigator/tabs/DynamicTabNavigator3";
 
 export default function App() {
-  return <DynamicTabNavigator3 />;
+  return (
+    <DynamicTabNavigator3 />
+  );
 }
