@@ -8,7 +8,9 @@ import ProfileScreen from "./src/screens/ProfileScreen";
 import StaticStackNavigator from "./src/navigator/stack/StaticStackNavigator";
 import DynamicStackNavigator from "./src/navigator/stack/DynamicStackNavigator";
 import DynamicTabNavigator from "./src/navigator/tabs/DynamicTabNavigator";
+import DynamicTabNavigator2 from "./src/navigator/tabs/DynamicTabNavigator2";
+import DynamicTabNavigator3 from "./src/navigator/tabs/DynamicTabNavigator3";
 
 export default function App() {
-  return <DynamicTabNavigator />;
+  return <DynamicTabNavigator3 />;
 }
